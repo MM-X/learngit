@@ -55,6 +55,7 @@
 	$ git branch
 	$ git switch -c dev
 	$ git switch master
+	$ git merge --abort  有冲突时放弃merge
 	
 	$ git log --graph --pretty=oneline --abbrev-commit   按行显示 缩写
 	
