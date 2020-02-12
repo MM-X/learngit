@@ -71,4 +71,17 @@
 		$ git cherry-pick 4c805e2  将master的修改操作复制到当前分支
 		
 		$ git stash apply stash@{0}
+		
+	多人协作
+		$ git remote 查看远程仓库名称
+		$ git remote -v  查看远程仓库信息
+		$ git push origin master  推送master分支
+		$ git push origin dev  推送dev分支
+		
+		$ git clone git@github.com:michaelliao/learngit.git  抓取分支
+		$ git checkout -b dev origin/dev  创建远程origin的dev分支到本低
+		$ git pull 把最新的提交从origin/dev抓下来
+		$ git branch --set-upstream-to=origin/dev dev  设置dev和origin/dev的链接：
+		$ git commit -m "fix env conflict"
+		$ git push origin dev
 	
