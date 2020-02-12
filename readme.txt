@@ -6,3 +6,4 @@ test difference
 add one
 add three
 add two
+add four
