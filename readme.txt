@@ -1,10 +1,2 @@
-Git is a distributed version control system.
-Git is free software.
-Add something in this line.
-Creating a new branch is quick and simple.
-test difference
-add one
-add three
-add two
-add four
-add five
+##这是一个根据廖雪峰官网教程的git学习目录  
+###总结参考git总结  
