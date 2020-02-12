@@ -45,7 +45,7 @@
 	
 6.分支管理
 	$ git checkout -b dev
-		$ git branch dev
+		$ git branch dev  创建分支
 		$ git checkout dev
 	$ git branch 查看当前分支
 	
@@ -55,3 +55,9 @@
 	$ git branch
 	$ git switch -c dev
 	$ git switch master
+	
+	$ git log --graph --pretty=oneline --abbrev-commit   按行显示 缩写
+	
+	强制禁用fast forward,防止删除分支后丢掉分支部分
+	$ git merge --no-ff -m "merge with no-ff" dev
+	
