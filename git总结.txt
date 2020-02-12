@@ -52,6 +52,7 @@
 	$ git checkout master
 	$ git merge dev
 	$ git branch -d dev 删除
+	& git branch -D <name>强行删除。
 	$ git branch
 	$ git switch -c dev
 	$ git switch master
@@ -61,4 +62,13 @@
 	
 	强制禁用fast forward,防止删除分支后丢掉分支部分
 	$ git merge --no-ff -m "merge with no-ff" dev
+	
+	处理bug分支
+		$ git stash  压入存储区
+		$ git stash list 查看存储区
+		$ git stash apply && $ git stash drop 恢复删除临时区
+		$ git stash pop  同上
+		$ git cherry-pick 4c805e2  将master的修改操作复制到当前分支
+		
+		$ git stash apply stash@{0}
 	
